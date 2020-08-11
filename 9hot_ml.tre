@@ -1,0 +1,130 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=28;
+	taxlabels
+	Fra_ves[&Newname="Fragaria vesca"]
+	R_col[&Newname="R. columellaris"]
+	R_corc[&Newname="R. corchorifolius"]
+	R_cra[&Newname="R. crassifolius"]
+	R_ell_obc[&Newname="R. ellipticus var. obcordatus"]
+	R_hen[&Newname="R. henryi"]
+	R_ich[&Newname="R. ichangensis"]
+	R_inn[&Newname="R. innominatus"]
+	R_lam[&Newname="R. lambertianus"]
+	R_lin[&Newname="R. lineatus"]
+	R_niv[&Newname="R. niveus"]
+	R_pec[&Newname="R. pectinaris"]
+	R_pel[&Newname="R. peltatus"]
+	R_pen[&Newname="R. pentagonus"]
+	R_pil[&Newname="R. pileatus"]
+	R_pinf[&Newname="R. wallichianus"]
+	R_pinf1[&Newname="R. ellipticus"]
+	R_pir_per[&Newname="R. pirifolius var. permollis"]
+	R_ref_lan[&Newname="R. reflexus var. lanceolobus"]
+	R_set[&Newname="R. setchuenensis"]
+	R_tsa[&Newname="R. tsangii"]
+	R_xanp[&Newname="R. xanthocarpus"]
+	R_xant[&Newname="R. xanthoneurus"]
+	Rub_coc[&Newname="R. cochinchinensis"]
+	Rub_cor[&Newname="R. coreanus"]
+	Rub_cra[&Newname="R. crataegifolius"]
+	Rub_leu[&Newname="R. leucanthus"]
+	Rub_tak[&Newname="R. takesimensis"]
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ((((R_niv:0.001081,(R_inn:3.74E-4,Rub_cor:0.007275)[&bootstrap=100,!rotate=true]:0.002174)[&bootstrap=100]:0.006964,R_pil:0.013571)[&bootstrap=100]:0.004044,(((R_set:0.00175,((R_xant:0.001093,((R_ich:0.001041,(Rub_coc:5.0E-4,R_ref_lan:6.54E-4)[&bootstrap=94]:4.2E-4)[&bootstrap=53]:1.52E-4,(R_cra:0.001153,R_lam:6.51E-4)[&bootstrap=62,!rotate=true]:9.4E-5)[&bootstrap=100]:0.002062)[&bootstrap=100]:0.001244,(R_pir_per:7.43E-4,R_hen:0.001605)[&bootstrap=94,!rotate=true]:3.05E-4)[&bootstrap=55]:1.54E-4)[&bootstrap=100]:0.00442,((R_pen:0.001722,R_lin:0.00345)[&bootstrap=100]:0.003724,R_pec:0.002814)[&bootstrap=100]:0.003177)[&bootstrap=100]:0.002649,(((R_pel:0.024438,((Rub_cra:8.78E-4,Rub_tak:9.47E-4)[&bootstrap=100]:0.018177,(R_tsa:0.026978,R_corc:0.013777)[&bootstrap=100,!rotate=true]:0.003737)[&bootstrap=100,!rotate=true]:0.005481)[&bootstrap=100]:0.004031,(Rub_leu:0.016858,R_xanp:0.024794)[&bootstrap=100]:0.004116)[&bootstrap=71]:2.1E-4,(R_ell_obc:0.004059,(R_col:0.001241,(R_pinf1:0.001295,R_pinf:0.002841)[&bootstrap=40]:7.8E-5)[&bootstrap=100,!rotate=true]:0.004207)[&bootstrap=100]:0.007648)[&bootstrap=100]:0.006556)[&bootstrap=76]:7.27E-4):0.038374,Fra_ves:0.038374);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.6;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="bootstrap";
+	set branchLabels.fontName="Adobe Arabic";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="bootstrap";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="bootstrap";
+	set nodeLabels.fontName="Adobe Arabic";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=true;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.009;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Newname";
+	set tipLabels.fontName="Adobe Arabic";
+	set tipLabels.fontSize=13;
+	set tipLabels.fontStyle=3;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
